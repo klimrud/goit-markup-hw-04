@@ -190,7 +190,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-width: 1600px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -350,7 +350,8 @@ body {
 }
 
 .command-item-content {
-
+   padding-top: 30px;
+   padding-bottom: 30px;
 }
 
 .command-title {
@@ -361,7 +362,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--second-color);
   margin-bottom: 10px;
-  padding-top: 30px;
+  /* padding-top: 30px; */
 }
 .command-desc {
   font-size: 16px;
@@ -376,7 +377,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 10px;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 }
 
 .command-soc-link {
@@ -430,20 +431,18 @@ body {
 }
 
 .clients-list {
-  display: flex;
+  /* display: flex;
   justify-content: center;
+ */
 }
 
 .clients-item {
-  
- 
   width: 170px;
   height: 92px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #AFB1B8; 
   border-radius: 4px;
 }
 
@@ -455,7 +454,7 @@ body {
 
 .clients-item:hover,
 .clients-item:focus {
-  border: 1px solid #2196F3;
+  border-color: #2196F3;
   fill: #2196F3;
 }
 
@@ -468,6 +467,8 @@ body {
 /* --------------підвал---------------- */
 .footer {
   background: var(--section-color); 
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-aside {
@@ -477,9 +478,6 @@ body {
 }
 
 .footer-container {
-  display: inline-block;
-  padding-top: 60px;
-  padding-bottom: 60px;
   align-items: baseline;
 }
 
@@ -621,7 +619,9 @@ body {
  border-radius: 4px;
  cursor: pointer;
  background-color: var(--command-fon);
- min-width: 73px;
+ /* min-width: 73px; */
+ padding: 6px 22px;
+ 
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -643,11 +643,9 @@ body {
 }
 
 .gallery-link {
- 
-
+display: block;
 }
-.gallery-item:focus,
-.gallery-item:hover,
+
 .gallery-link:hover,
 .gallery-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
